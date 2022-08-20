@@ -21,7 +21,7 @@ function updateTotal(){
     const phoneTotal = parseFloat(document.getElementById('phone-price').innerText);
     const caseToTal = parseFloat(document.getElementById('case-price').innerText);
     const subTotal = phoneTotal + caseToTal;
-    const tax = (subTotal * 0.1).toFixed(2);
+    const tax = parseFloat((subTotal * 0.1).toFixed(2));
     const total = subTotal+tax;
     document.getElementById('subtotal').innerText = subTotal;
     document.getElementById('tax').innerText = tax;
